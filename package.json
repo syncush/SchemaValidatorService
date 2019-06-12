@@ -2,13 +2,13 @@
   "name": "TestEslint",
   "version": "1.0.0",
   "description": "",
-  "main": "hatul-meow.js",
+  "main": "index.js",
   "type": "commonjs",
   "scripts": {
     "lint": "node node_modules/eslint/bin/eslint.js --fix **/*.js",
     "test": "node node_modules/mocha/bin/_mocha --recursive",
     "prestart": "npm run lint && npm run test",
-    "start": "node hatul-meow.js"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
@@ -35,5 +35,10 @@
     "mocha": "^6.1.4",
     "nodemon": "^1.19.1",
     "prettier": "1.18.0"
+  },
+  "dependencies": {
+    "ajv": "^6.10.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
   }
 }
